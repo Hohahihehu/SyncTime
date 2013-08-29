@@ -12,7 +12,7 @@ this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
 @Override
 public void run() {
 //Gets IRL time, in milliseconds, after most recent 1/5 day interval in UTC + 1
-long irlTimeMillis = (currentTimeMillis() + 3600000L) % 17280000L;
+long irlTimeMillis = (System.currentTimeMillis() + 3600000L) % 17280000L;
 
 //Calculates desired time of day in Minecraft based on IRL time, in ticks.
 long syncedTimeOfDay = (irlTimeMillis / 17280000L) * 24000L; 

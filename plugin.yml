@@ -1,0 +1,5 @@
+name: SyncTime
+author: Hohahihehu
+version: 0.0.1
+main: com.gildorym.synctime.SyncTime
+description: Synchronizes a Minecraft server's in-game time of day with the Gildorym Calendar. 
